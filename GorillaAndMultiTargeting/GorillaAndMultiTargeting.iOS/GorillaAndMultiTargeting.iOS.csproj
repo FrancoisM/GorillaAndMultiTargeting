@@ -119,10 +119,23 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="UXDivers.GorillaPlayer.SDK">
+      <Version>1.2.0.6</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\Controls.iOS\Controls.iOS.csproj">
+      <Project>{91579484-edc8-4771-95f1-e83b51451f0d}</Project>
+      <Name>Controls.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controls\Controls.csproj">
+      <Project>{31ba8003-348d-4132-9443-9b33f607f673}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GorillaAndMultiTargeting\GorillaAndMultiTargeting.csproj">
       <Project>{0F8DD7F5-80B3-47DB-B5CD-67A4453B463B}</Project>
       <Name>GorillaAndMultiTargeting</Name>
