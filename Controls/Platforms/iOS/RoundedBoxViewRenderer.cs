@@ -2,13 +2,11 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(RoundedBoxView), typeof(Controls.iOS.RoundedBoxViewRenderer))]
-namespace Controls.iOS
+[assembly: ExportRenderer(typeof(RoundedBoxView), typeof(Controls.Platforms.iOS.RoundedBoxViewRenderer))]
+namespace Controls.Platforms.iOS
 {
     public class RoundedBoxViewRenderer : BoxRenderer
     {
-        public static void Init() { }
-
         protected override void OnElementChanged(ElementChangedEventArgs<BoxView> e)
         {
             base.OnElementChanged(e);

@@ -1,5 +1,4 @@
-﻿using Controls.iOS;
-using Foundation;
+﻿using Foundation;
 using UIKit;
 
 namespace GorillaAndMultiTargeting.iOS
@@ -20,12 +19,10 @@ namespace GorillaAndMultiTargeting.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Xamarin.Forms.Forms.Init();
-            RoundedBoxViewRenderer.Init();
             LoadApplication(UXDivers.Gorilla.iOS.Player.CreateApplication(
                 new UXDivers.Gorilla.Config("Good Gorilla")
                     .RegisterAssemblyFromType<App>()
-                    .RegisterAssemblyFromType<Controls.RoundedBoxView>()
-                    .RegisterAssemblyFromType<RoundedBoxViewRenderer>()));
+                    .RegisterAssemblyFromType<Controls.Platforms.iOS.RoundedBoxViewRenderer>()));
 
             return base.FinishedLaunching(app, options);
         }

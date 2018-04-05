@@ -126,12 +126,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\Controls.iOS\Controls.iOS.csproj">
-      <Project>{91579484-edc8-4771-95f1-e83b51451f0d}</Project>
-      <Name>Controls.iOS</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
-    </ProjectReference>
     <ProjectReference Include="..\..\Controls\Controls.csproj">
       <Project>{31ba8003-348d-4132-9443-9b33f607f673}</Project>
       <Name>Controls</Name>
